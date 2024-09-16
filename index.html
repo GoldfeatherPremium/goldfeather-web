@@ -6,5 +6,25 @@
 <body>
     <h1>Welcome to Goldfeather Premium!</h1>
     <p>This is a simple site.</p>
-</body>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBuqIvE2aeN_P47VS1lZVQuwnyCzL32xgE",
+  authDomain: "goldfeather-logins.firebaseapp.com",
+  projectId: "goldfeather-logins",
+  storageBucket: "goldfeather-logins.appspot.com",
+  messagingSenderId: "916120739095",
+  appId: "1:916120739095:web:8192315e7ba890cf436b52",
+  measurementId: "G-8WZWK5SKN3"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);</body>
 </html>
